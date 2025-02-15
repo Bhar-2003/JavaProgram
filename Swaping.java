@@ -13,5 +13,6 @@ public class Swaping {
         num2=num3;
         System.out.println("The num1 is swapped to "+num1);
         System.out.println("The num1 is swapped to "+num2);
+
     }
 }
