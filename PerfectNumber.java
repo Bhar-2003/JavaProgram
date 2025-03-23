@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class PerfectNumber {
     public static void main(String[] args) {
         Scanner sc=new Scanner (System.in);
-        //Perfect Number
+        //Perfect Number or Complete Numbers or Aliquot or granville
         System.out.println("Enter the Number :");
         int num=sc.nextInt();
         int sum=0;

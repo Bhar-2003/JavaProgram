@@ -7,14 +7,13 @@ public class MatrixAddition {
         int size=sc.nextInt();
         System.out.println("Enter the Elements of Array 1 :");
         int arr1[][]=new int[size][size];
-        int arr2[][]=new int[size][size];
-        int sum[][]=new int [size][size];
         for (int i=0;i<=size-1;i++){
             for (int j=0;j<=size-1;j++) {
                 arr1[i][j] = sc.nextInt();
             }
         }
         System.out.println("Enter the Elements of Array 2 :");
+        int arr2[][]=new int[size][size];
         for (int i=0;i<=size-1;i++){
             for (int j=0;j<=size-1;j++) {
                 arr2[i][j] = sc.nextInt();
@@ -35,6 +34,7 @@ public class MatrixAddition {
             System.out.println();
         }
         System.out.println("Addition of two Matrix :");
+        int sum[][]=new int [size][size];
         for (int i=0;i<=size-1;i++){
             for (int j=0;j<=size-1;j++) {
                 sum[i][j]=arr1[i][j]+arr2[i][j];

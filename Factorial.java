@@ -6,10 +6,11 @@ public class Factorial {
         int fact = 1;
         System.out.println("Enter the number :");
         int num = sc.nextInt();
-        if (num == 0) {
+        if (num == 0||num==1) {
             System.out.println(1);
+            return;
         }
-        for (int i = 1; i <= num; i++) {
+        for (int i = 2; i <= num; i++) {
             fact *= i;
         }
         System.out.println(fact);

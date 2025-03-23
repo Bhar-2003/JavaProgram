@@ -23,6 +23,6 @@ public class AddAntiDiagnal {
         for (int i=0;i<=size-1;i++){
                 sum += arr[i][size-1-i];
         }
-        System.out.println("Sum of Diagonal "+sum);
+        System.out.println("Sum of Primary Diagonal "+sum);
     }
 }

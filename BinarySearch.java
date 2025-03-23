@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class BinarySearch {
     static int binarySearch(int arr[],int key){
         int low=0;
-        int high=arr.length-1;
+        int high=arr.length;
         int mid=0;
         while (low<=high){
             mid=(low+high)/2;

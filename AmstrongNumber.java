@@ -1,6 +1,12 @@
 import java.util.Scanner;
 public class AmstrongNumber {
     public static void main(String[] args) {
+        // Narcissistic or pluperfect or pluperfect digital invariant
+        // An Armstrong number is a number where the sum of its
+        // digits, each raised to the power of the number of digits,
+        // equals the original number
+        // 153: 13 + 53 + 33 = 1 + 125+ 27 = 153
+        // 1634: 14 + 64 + 34 + 44 = 1 + 1296 + 81 + 256 = 1643
         Scanner sc=new Scanner(System.in);
         //To find The Amstrong Number
         System.out.println("Enter the Digit");

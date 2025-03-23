@@ -7,6 +7,7 @@ public class AmstrongNumberOddPosition {
         int lower_limit=sc.nextInt();
         System.out.println("Enter the Upper Limit :");
         int upper_limit=sc.nextInt();
+        int position=0;
         for(int i = lower_limit; i<=upper_limit; i++)
         {
             int n=i;
@@ -25,13 +26,13 @@ public class AmstrongNumberOddPosition {
                 sum+=(int)Math.pow(reminder,count);
                 n/=10;
             }
-            int position=0;
+
             if(temp==sum)
             {
                 position++;
-                if(position%2 == 0)
+                if(position%2!= 0)
                 {
-                    System.out.println("The "+temp+" is an Even Position");
+                    System.out.println("The "+temp+" is an Odd Position");
                 }
 
             }

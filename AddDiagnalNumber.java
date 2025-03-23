@@ -21,9 +21,7 @@ public class AddDiagnalNumber {
         }
         int sum=0;
         for (int i=0;i<=size-1;i++){
-            if (i==i){
             sum += arr[i][i];
-            }
         }
         System.out.println("Sum of Secondary Diagonal "+sum);
     }
