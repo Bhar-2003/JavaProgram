@@ -1,51 +1,42 @@
 import java.util.Scanner;
 
-public class Demo1{
+public class Demo1 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the size of Array :");
-        int size = sc.nextInt();
-        System.out.println("Enter the Elements of Array 1 :");
-        int arr[][] = new int[size][size];
-        for (int i = 0; i <= arr.length - 1; i++) {
-            for (int j = 0; j <= arr.length - 1; j++) {
-                arr[i][j] = sc.nextInt();
-            }
+        // Narcissistic or pluperfect or pluperfect digital invariant
+        // An Armstrong number is a number where the sum of its
+        // digits, each raised to the power of the number of digits,
+        // equals the original number
+        // 153: 1^3 + 5^3 + 3^3 = 1 + 125+ 27 = 153
+        // 1634: 1^4 + 6^4 + 3^4 + 4^4 = 1 + 1296 + 81 + 256 = 1643
+        Scanner sc=new Scanner(System.in);
+        //To find The Amstrong Number
+        System.out.println("Enter the Digit");
+        int digit=sc.nextInt();
+        int temp=digit;
+        int sum=0;
+        int count=0;
+        while(digit>0) {
+            count++;
+            digit /= 10;
         }
-        System.out.println("Enter the Elements of Array 2 :");
-        int arr2[][] = new int[size][size];
-        for (int i = 0; i <= arr.length - 1; i++) {
-            for (int j = 0; j <= arr.length - 1; j++) {
-                arr2[i][j] = sc.nextInt();
+        digit=temp;//this is to re-assign that digit becomes 0
+        while(digit>0)
+        {
+            int reminder=digit%10;
+            for (int i=0;i<count;i++){
+                sum+=reminder*reminder;
             }
-            System.out.println();
+            digit/=10;
         }
-        System.out.println("Array 1 Matrix :");
-        for (int i = 0; i <= arr.length - 1; i++) {
-            for (int j = 0; j <= arr.length - 1; j++) {
-                System.out.print(arr[i][j] + " ");
-            }
-            System.out.println();
+        System.out.println(sum);
+        if(temp==sum)
+        {
+            System.out.println("The given Number is a Amstrong Number");
         }
-        System.out.println("Array 1 Matrix :");
-        for (int i = 0; i <= arr2.length - 1; i++) {
-            for (int j = 0; j <= arr2.length - 1; j++) {
-                System.out.print(arr2[i][j] + " ");
-            }
-            System.out.println();
+        else
+        {
+            System.out.println("The given number is not a Amstrong Number");
         }
-        System.out.println();
-        int mult[][] = new int[size][size];
-        System.out.println("Multiplication Matrix :");
-        for (int i = 0; i <= arr.length - 1; i++) {
-            for (int j = 0; j <= arr.length - 1; j++) {
-                for (int k = 0; k <= size - 1; k++) {
-                    mult[i][j] += arr[i][k] * arr2[k][j];
-                }
-                System.out.print(mult[i][j] + " ");
-            }
-            System.out.println();
-        }
-        System.out.println();
+
     }
 }

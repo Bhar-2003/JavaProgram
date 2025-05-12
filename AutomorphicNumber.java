@@ -11,7 +11,7 @@ public class AutomorphicNumber {
         int sqr = num * num;
         int count = 0;
         int temp = num;
-        while (num > 0) {
+        while (num > 0){
             num /= 10;
             count++;
         }

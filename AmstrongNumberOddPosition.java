@@ -29,12 +29,11 @@ public class AmstrongNumberOddPosition {
 
             if(temp==sum)
             {
-                position++;
                 if(position%2!= 0)
                 {
-                    System.out.println("The "+temp+" is an Odd Position");
+                    System.out.println("The "+temp+" : "+ position+" is an Odd Position");
                 }
-
+                position++;
             }
         }
     }

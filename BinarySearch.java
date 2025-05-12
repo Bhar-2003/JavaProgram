@@ -5,7 +5,7 @@ public class BinarySearch {
     static int binarySearch(int arr[],int key){
         int low=0;
         int high=arr.length;
-        int mid=0;
+        int mid;
         while (low<=high){
             mid=(low+high)/2;
             if(arr[mid]==key){
@@ -13,11 +13,9 @@ public class BinarySearch {
             }
             else if (key<arr[mid]){
                 high=mid-1;
-                low=low;
             }
             else {
                 low=mid+1;
-                high=high;
             }
         }
         return -1;

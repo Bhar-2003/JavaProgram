@@ -19,7 +19,6 @@ public class StrongNumber {
             sum+=fact;
             num/=10;
         }
-
         if(temp==sum)
         {
             System.out.println("The given "+temp+" is an Strong Number.");

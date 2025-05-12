@@ -9,7 +9,6 @@ public class CountOfDigits {
         int count=0;
         while(digit>0)
         {
-            int remainder=digit%10;
             digit/=10;
             count++;
         }

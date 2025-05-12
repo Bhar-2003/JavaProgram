@@ -33,7 +33,7 @@ public class AmstrongNumber3Position {
                     position++;
                     if(position%3== 0)
                     {
-                        System.out.println("The "+temp+" is an 3 Position");
+                        System.out.println("The "+temp+" : "+position+" is an 3 Position");
                     }
 
                 }

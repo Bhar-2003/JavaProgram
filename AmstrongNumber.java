@@ -5,8 +5,8 @@ public class AmstrongNumber {
         // An Armstrong number is a number where the sum of its
         // digits, each raised to the power of the number of digits,
         // equals the original number
-        // 153: 13 + 53 + 33 = 1 + 125+ 27 = 153
-        // 1634: 14 + 64 + 34 + 44 = 1 + 1296 + 81 + 256 = 1643
+        // 153: 1^3 + 5^3 + 3^3 = 1 + 125+ 27 = 153
+        // 1634: 1^4 + 6^4 + 3^4 + 4^4 = 1 + 1296 + 81 + 256 = 1643
         Scanner sc=new Scanner(System.in);
         //To find The Amstrong Number
         System.out.println("Enter the Digit");
@@ -22,7 +22,7 @@ public class AmstrongNumber {
         while(digit>0)
         {
             int reminder=digit%10;
-            sum=sum+(int)(Math.pow(reminder,count));
+            sum+=(int)(Math.pow(reminder,count));
             digit/=10;
         }
         System.out.println(sum);
